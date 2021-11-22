@@ -10,11 +10,11 @@ const Nav = () => {
             </div>
             <div className="footer-nav">
                 <ul>
-                    <a><li>PRIVACY POLICY</li></a>
-                    <a><li>CONTACT US</li></a>
-                    <a><li>JOBS AND CAREERS</li></a>
-                    <a><li>ALERTS</li></a>
-                    <a><li>PUBLIC RECORDS</li></a>
+                    <a href=""><li>PRIVACY POLICY</li></a>
+                    <a href=""><li>CONTACT US</li></a>
+                    <a href=""><li>JOBS AND CAREERS</li></a>
+                    <a href=""><li>ALERTS</li></a>
+                    <a href=""><li>PUBLIC RECORDS</li></a>
                 </ul>
             </div>
             <div>

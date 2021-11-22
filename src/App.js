@@ -5,6 +5,7 @@ import Nav from "./Components/Nav"
 import Footer from "./Components/Footer"
 
 import Home from "./Pages/Home"
+import News from "./Pages/News"
 //data for props
 import { GridData } from './Data/GridData'
 
@@ -15,6 +16,9 @@ function App() {
         <Route component={Nav} />
         <Route path="/" exact>
           <Home GridData={GridData}/>
+        </Route>
+        <Route path="/news">
+          <News />
         </Route>
         <Route component={Footer} />
       </Router>

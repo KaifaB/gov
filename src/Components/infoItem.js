@@ -1,20 +1,24 @@
 import React from 'react';
 
 
-class infoItem extends React.Component {
-    constructor(props){
-        super(props);
-        const image = this.props.image;
-    }
+class InfoItem extends React.Component {
     render() {
+        var timestamp = Date.parse(this.props.date)
+        var date = new Date(timestamp)
+        const realday = date.toString().slice(4,10)
         return(
-            <div className="info-item">
-                <img classname="grid-image" src={image} alt="image"/>
-                <h1></h1>
-                <p></p>
-            </div>
+            <a href={this.props.link}>
+                <div className="info-item">
+                    <img classname="grid-image" src={this.props.image} alt={"article"+this.props.key}/>
+                    <div>
+                        <h1>{this.props.title.slice(0,60)}...</h1>
+                        <p>{this.props.topic}</p>
+                        <h3>{realday}</h3>
+                    </div>
+                </div>
+            </a>
         );
     }
   }
 
-  export default infoItem;
+  export default InfoItem;

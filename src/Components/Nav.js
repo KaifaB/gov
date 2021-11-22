@@ -24,7 +24,8 @@ const Nav = () => {
                 </div>
                 <div className="quick-flex city-name">
                     <h1>CITY of</h1>
-                    <img className="cursive" src={Cursive} />
+                    <img alt="los-angeles-title" className="cursive" src={Cursive} />
+                    <h2></h2>
                 </div>
             </div>
 
